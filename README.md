@@ -14,7 +14,7 @@ The repository comes in two parts; **Auditory Evoked Potentials** and **process_
 1. The *individual processes* folder contains all processes that calculate one measurement type from a group of epochs (e.g. one residual noise measurement from 6000 ABR epochs).
 2. The *combined processes* folder contains processes that are combined versions of various individual processes from the *individual processes* folder. That is, the processes from *combined processes* output more than one measurement type from a group of epochs (e.g. residual noise, weighted average and noise per epoch). Users can combine processes from the *individual processes* folder to generate their own combined processes. 
 
-**process_sleepspindle_parameters**
+**Sleep Spindle Parameters**
 <br>This folder contains a process that calculates the parameters of sleep spindles and explanations of what the process does and how it works.
 <br>To learn more about this process visit the README.md of this folder. 
 
