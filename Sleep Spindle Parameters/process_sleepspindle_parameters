@@ -1,4 +1,4 @@
-# Process Sleep Spindle Parameters
+#  Sleep Spindle Parameters
 Brainstorm custom-made process to calculate sleep spindle duration, frequency, max peak-to-peak amplitude, and degree of symmetry.
 
 ## How the process works
