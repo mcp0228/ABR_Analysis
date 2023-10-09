@@ -12,7 +12,9 @@ The repository comes in two parts; **Auditory Evoked Potentials** and **Sleep Sp
 <br>The processes were mainly used to analyse auditory brainstem responses (ABR; an early component of the AEP) but they can be used for later potentials as well (e.g. cortical auditory evoked potentials; CAEP). 
 <br><br>There are two subfolders inside; *combined processes* and *individual processes*. 
 1. The *individual processes* folder: contains all processes that calculate one measurement type from a group of epochs (e.g. one residual noise measurement from 6000 ABR epochs).
-2. The *combined processes* folder: contains processes that are combined versions of various individual processes from the *individual processes* folder. That is, the processes from the *combined processes* folder output more than one measurement type from a group of epochs (e.g. residual noise, weighted average, and noise per epoch). Users can combine processes from the *individual processes* folder to generate their own combined processes. 
+2. The *combined processes* folder: contains processes that are combined versions of various individual processes from the *individual processes* folder.
+That is, the processes from the *combined processes* folder output more than one measurement type from a group of epochs (e.g. residual noise, weighted average, and noise per epoch).
+Users can combine processes from the *individual processes* folder to generate their own combined processes. 
 
 **Sleep Spindle Parameters**
 <br>This folder contains a process that calculates the parameters of sleep spindles and explanations of what the process does and how it works.
