@@ -22,12 +22,12 @@ This process generates four output files which correspond to four sleep spindle 
 
 **2) Frequency.**
 <br>With the duration of a spindle already known, the frequency (or in the case of the above diagram, intra-spindle frequency) of a single discrete spindle = reciprocal (cycle number/duration).
-<br>The MATLAB [*findpeaks*](https://au.mathworks.com/help/signal/ref/findpeaks.html) (find local maxima) function was used to find all the peaks of a spindle and the [*length*](https://au.mathworks.com/help/matlab/ref/length.html) function was used to count the number of peaks.
+<br>The Matlab [*findpeaks*](https://au.mathworks.com/help/signal/ref/findpeaks.html) (find local maxima) function was used to find all the peaks of a spindle and the [*length*](https://au.mathworks.com/help/Matlab/ref/length.html) function was used to count the number of peaks.
 
 **3) Maximum peak-to-peak amplitude.**
-<br>The MATLAB *findpeaks* function was used from 2) to find the amplitude of each peak.
+<br>The Matlab *findpeaks* function was used from 2) to find the amplitude of each peak.
 <br>The *findpeaks* function was used on the negative version of the data (i.e. data*-1) to find the amplitudes of the negative peaks.
-<br>The [*max*](https://au.mathworks.com/help/matlab/ref/max.html) function was used to calculate the maximum positive and negative peaks of a single spindle. 
+<br>The [*max*](https://au.mathworks.com/help/Matlab/ref/max.html) function was used to calculate the maximum positive and negative peaks of a single spindle. 
 <br>Therefore, max peak-to-peak amplitude = max positive peak - max negative peak.
 
 **4) Symmetry.**
