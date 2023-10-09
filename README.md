@@ -5,7 +5,7 @@ Repository for all custom-made Brainstorm Processes.
 [Brainstorm](https://neuroimage.usc.edu/brainstorm/), is an MEG/EEG analysis software within the Matlab environment and allows users to generate and use their own custom-made analysis processes as a plug-in.
 This repository is a collection of all the custom processes that were written as part of the author's PhD project at the University of Canterbury, Christchurch, New Zealand.
 Although Brainstorm does not require users to own a Matlab license all the processes were written with Matlab. 
-The repository comes in two parts; **Auditory Evoked Potentials** and **process_sleepspindle_parameters**.
+The repository comes in two parts; **Auditory Evoked Potentials** and **Sleep Spindle Parameters**.
 
 **Auditory Evoked Potentials** 
 <br>This folder contains custom processes for analysing auditory evoked potentials (AEP). 
