@@ -35,10 +35,12 @@ This process generates four output files which correspond to four sleep spindle 
 <br>Meaning, that a spindle symmetry value of 70% indicates that the maximum peak for that spindle is at 70% of its duration. 
 
 ### Additional resources
-To learn more about this process and how it was written visit these two Brainstorm forums written by the author. 
+**Relevant Brainstorm forums written by the author**
 1) [Extracting manually identified events for further analysis](https://neuroimage.usc.edu/forums/t/extracting-manually-identified-events-for-further-analysis/41841)
 2) [Custom process for individual epochs with different time samples](https://neuroimage.usc.edu/forums/t/custom-process-for-individual-epochs-with-different-time-samples/42260)
 
-Two articles were used in particular for writing this process.<br>Sleep spindle parameter definitions used in this process were obtained from the second article. 
+**References**
+<br>Two articles were used in particular for writing this process.
+<br>Sleep spindle parameter definitions used in this process were obtained from the second article. 
 1) [Sleep Spindles: Mechanisms and Functions](https://pubmed.ncbi.nlm.nih.gov/31804897/)
 2) [Sleep-spindle detection: crowdsourcing and evaluating performance of experts, non-experts and automated methods](https://pubmed.ncbi.nlm.nih.gov/24562424/)
