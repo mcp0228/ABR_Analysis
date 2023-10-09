@@ -42,8 +42,3 @@ To learn more about this process and how it was written visit these two Brainsto
 Two articles were used in particular for writing this process.<br>Sleep spindle parameter definitions used in this process were obtained from the second article. 
 1) [Sleep Spindles: Mechanisms and Functions](https://pubmed.ncbi.nlm.nih.gov/31804897/)
 2) [Sleep-spindle detection: crowdsourcing and evaluating performance of experts, non-experts and automated methods](https://pubmed.ncbi.nlm.nih.gov/24562424/)
-
-### Disclaimer 
-As mentioned above, this requires [Brainstorm software](https://neuroimage.usc.edu/brainstorm/) to be used. 
-<br>Brainstorm, an MEG/EEG analysis software within the Matlab environment allows users to generate and use their own custom-made analysis processes as a plug-in.
-To learn more about writing your own processes to be used within Brainstorm visit this tutorial; [How to write your own process](https://neuroimage.usc.edu/brainstorm/Tutorials/TutUserProcess).
