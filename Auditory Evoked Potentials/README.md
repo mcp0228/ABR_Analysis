@@ -17,30 +17,48 @@ ABR Fsp process generates a single value and if the time window is not specified
 ### Individual processes
 1. **process_abr_fsp.m**
 <BR>to be completed.
+
 2. **process_epoch_weighting.m**
 <BR>Calculates epoch-specific weighting by taking the inverse of epoch variance. The weighting is then applied to each epoch.
 That is, with an input of 100 raw epochs the output will be 100 weighted epochs.
-4. **process_noise_per_epoch.m**
+
+3. **process_noise_per_epoch.m**
 <BR>Calculates the level of noise present in each channel per epoch. The noise is calculated as the standard deviation (std) of each channel per epoch.
 Therefore the output will be noise (i.e. std) on the y-axis and the epoch number on the x-axis.
-![EEG_All_CTRL1_L_CTRL1_L_C45P10_low_files_NEpoch_6000](https://github.com/park-minchul/Brainstorm-Custom-Processes/assets/134780775/443a58fc-35e7-4903-b204-ad3ea972b41d)
+![EEG_All_CTRL1_L_CTRL1_L_C45P10_low_files_NEpoch_6000](https://github.com/park-minchul/Brainstorm-Custom-Processes/assets/134780775/991bbb28-9e7a-4ac5-b27b-f2b2d440c39a)
+Screenshot of Brainstorm file output from running the process on left/right channel ABR epochs (Left = Green and Right = Red).
+In this case, there were 6000 ABR epochs hence the x-axis goes until 6000. The amplitude shows the noise at each epoch from both channels.
 
-6. **process_residual_noise.m**
+4. **process_residual_noise.m**
 <BR>Calculates classic and weighted versions of residual noise of each channel after a given number of epochs.
 <BR>Classic residual noise = std of each channel over N epochs divided by the square root (sqrt) of the Nth epoch number.
 <BR>Weighted residual noise = (std of weighted channels over N epochs divided by sqrt of the Nth epoch number)/(mean of epoch weightings).
-![EEG_All_CTRL1_L_CTRL1_L_C45P10_low_files_RNoise_W_6000](https://github.com/park-minchul/Brainstorm-Custom-Processes/assets/134780775/2861f812-ba48-4422-8b8e-131a6b06ed1c)
+![EEG_All_CTRL1_L_CTRL1_L_C45P10_low_files_RNoise_C_6000](https://github.com/park-minchul/Brainstorm-Custom-Processes/assets/134780775/68b8d498-8a90-4f45-bad6-4b3c25ce3b9f)
+Classic residual noise (CRN) figure. Left = Green and Right = Red. 
+![EEG_All_CTRL1_L_CTRL1_L_C45P10_low_files_RNoise_W_6000](https://github.com/park-minchul/Brainstorm-Custom-Processes/assets/134780775/4c2f5c1a-7122-487d-a174-6a1948fb49b2)
+Weighted residual noise (WRN) figure. Left = Green and Right = Red. 
+<BR>Screenshots of Brainstorm file outputs from running the process on left/right channel ABR epochs. The amplitude shows the characteristic inversely decreasing residual noise over epochs from both channels.
+The difference between the figures is that the WRN is much more resilient to noise over the epochs compared to the CRN.
+The residual noise curves in WRN are smooth for the entire 6000 epochs but the CRN is showing bumps indicating when there was a rise in noise (e.g. participant movement).
+The changes in residual noise coincide with the noise per epoch figure shown above.
 
-8. **process_weighted_averaging.m**
+5. **process_weighted_averaging.m**
 <BR>Calculates epoch-specific weighting by taking the inverse of epoch variance. The weighting is then applied to each epoch.
 <BR>The final calculation of weighted average = (sum of weighted epochs)/(sum of epoch weightings).
 ![EEG_All_CTRL1_L_CTRL1_L_C45P10_low_files_Avg_1___timeoffset__detrend__bl_6000](https://github.com/park-minchul/Brainstorm-Custom-Processes/assets/134780775/150c14b7-689e-4076-a9a4-d0b159e544ac)
+Classically averaged left ear chirp ABR (45 dBnHL with ipsilateral background noise at +10 dB SNR) from 6000 epochs using Brainstorm's averaging process. Left = Green and Right = Red. Both channels are quite noisy.
 ![EEG_All_CTRL1_L_CTRL1_L_C45P10_low_files_WAvg_6000](https://github.com/park-minchul/Brainstorm-Custom-Processes/assets/134780775/c3a6c2a4-2e77-4122-bc51-ecd2719ada43)
+Weighted averaged left ear chirp ABR (45 dBnHL with ipsilateral background noise at +10 dB SNR) from 6000 epochs using the author's weighted averaging process. Left = Green and Right = Red.
+Unlike the classically averaged ABR, the weighted ABR shows less noise (because noisy epochs were given less weighting), and a more pronounced wave V peak, indicating a higher SNR. 
 ![CTRL1_L_CTRL1_L_C45P10_low_files_Extract_values__all_Left_2_files_WAvg_vs_Avg](https://github.com/park-minchul/Brainstorm-Custom-Processes/assets/134780775/a78a42da-0ed0-4e97-a705-871584733ac0)
+Classically (green) vs weighted averaged (red) ABR overlayed to show the significance of epoch weighting in improving SNR.
 
-10. **process_weighted_merging_rn.m**
+6. **process_weighted_merging_rn.m**
 <BR>Merges the left and right ABR channels and produces one ABR waveform by using residual noise as the weighting factor. Refer to the third reference article for the mathematical formula. 
 ![CTRL1_L_CTRL1_L_C45P10_low_files_Extract_values__all_EEG_2_files](https://github.com/park-minchul/Brainstorm-Custom-Processes/assets/134780775/f0ab123d-eb39-4029-a30b-466cdf81e846)
+Weighted averaged ABR (left = green and right = red) and weighted merged ABR (yellow) according to residual noise of each channel. The merged channel is weighted by residual noise.
+Hence, whichever trace had the higher residual noise will get a higher weighting factor in the merging process.
+In this case, the merged channel is almost exactly in between the two channels implying the residual noise between the two channels must have been quite similar.
 
 ### Combined processes
 1. **process_wavg_rnoise_nepoch.m**
