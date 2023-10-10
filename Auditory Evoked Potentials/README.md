@@ -19,19 +19,28 @@ ABR Fsp process generates a single value and if the time window is not specified
 <BR>to be completed.
 2. **process_epoch_weighting.m**
 <BR>Calculates epoch-specific weighting by taking the inverse of epoch variance. The weighting is then applied to each epoch.
-That is, with an input of 100 raw epochs the output will be 100 weighted epochs. 
+That is, with an input of 100 raw epochs the output will be 100 weighted epochs.
 4. **process_noise_per_epoch.m**
 <BR>Calculates the level of noise present in each channel per epoch. The noise is calculated as the standard deviation (std) of each channel per epoch.
-Therefore the output will be noise (i.e. std) on the y-axis and the epoch number on the x-axis. 
-5. **process_residual_noise.m**
+Therefore the output will be noise (i.e. std) on the y-axis and the epoch number on the x-axis.
+![EEG_All_CTRL1_L_CTRL1_L_C45P10_low_files_NEpoch_6000](https://github.com/park-minchul/Brainstorm-Custom-Processes/assets/134780775/443a58fc-35e7-4903-b204-ad3ea972b41d)
+
+6. **process_residual_noise.m**
 <BR>Calculates classic and weighted versions of residual noise of each channel after a given number of epochs.
 <BR>Classic residual noise = std of each channel over N epochs divided by the square root (sqrt) of the Nth epoch number.
 <BR>Weighted residual noise = (std of weighted channels over N epochs divided by sqrt of the Nth epoch number)/(mean of epoch weightings).
-7. **process_weighted_averaging.m**
+![EEG_All_CTRL1_L_CTRL1_L_C45P10_low_files_RNoise_W_6000](https://github.com/park-minchul/Brainstorm-Custom-Processes/assets/134780775/2861f812-ba48-4422-8b8e-131a6b06ed1c)
+
+8. **process_weighted_averaging.m**
 <BR>Calculates epoch-specific weighting by taking the inverse of epoch variance. The weighting is then applied to each epoch.
-<BR>The final calculation of weighted average = (sum of weighted epochs)/(sum of epoch weightings). 
-8. **process_weighted_merging_rn.m**
+<BR>The final calculation of weighted average = (sum of weighted epochs)/(sum of epoch weightings).
+![EEG_All_CTRL1_L_CTRL1_L_C45P10_low_files_Avg_1___timeoffset__detrend__bl_6000](https://github.com/park-minchul/Brainstorm-Custom-Processes/assets/134780775/150c14b7-689e-4076-a9a4-d0b159e544ac)
+![EEG_All_CTRL1_L_CTRL1_L_C45P10_low_files_WAvg_6000](https://github.com/park-minchul/Brainstorm-Custom-Processes/assets/134780775/c3a6c2a4-2e77-4122-bc51-ecd2719ada43)
+![CTRL1_L_CTRL1_L_C45P10_low_files_Extract_values__all_Left_2_files_WAvg_vs_Avg](https://github.com/park-minchul/Brainstorm-Custom-Processes/assets/134780775/a78a42da-0ed0-4e97-a705-871584733ac0)
+
+10. **process_weighted_merging_rn.m**
 <BR>Merges the left and right ABR channels and produces one ABR waveform by using residual noise as the weighting factor. Refer to the third reference article for the mathematical formula. 
+![CTRL1_L_CTRL1_L_C45P10_low_files_Extract_values__all_EEG_2_files](https://github.com/park-minchul/Brainstorm-Custom-Processes/assets/134780775/f0ab123d-eb39-4029-a30b-466cdf81e846)
 
 ### Combined processes
 1. **process_wavg_rnoise_nepoch.m**
