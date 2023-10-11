@@ -16,11 +16,13 @@ ABR Fsp process generates a single value and if the time window is not specified
 
 ### Individual processes
 1. **process_abr_fsp.m**
-<BR>to be completed.
+<BR>Calculates the Fsp which is the ratio between the estimated magnitude of the ABR versus the averaged background noise. It is a method to evaluate, statistically, the SNR of the averaged recording.
+As the process calculates a single value for each channel, the resulting file will look like the below when opened. 
+![EEG_All_CodingPractice1_AP_C60_ABR_Fsp_W_10](https://github.com/park-minchul/Brainstorm-Custom-Processes/assets/134780775/31dcd18c-9220-4dc2-bff5-27b417698baa)
 
 2. **process_epoch_weighting.m**
 <BR>Calculates epoch-specific weighting by taking the inverse of epoch variance. The weighting is then applied to each epoch.
-That is, with an input of 100 raw epochs the output will be 100 weighted epochs.
+Therefore, with an input of 100 raw epochs, the output will be 100 weighted epochs.
 
 3. **process_noise_per_epoch.m**
 <BR>Calculates the level of noise present in each channel per epoch. The noise is calculated as the standard deviation (std) of each channel per epoch.
