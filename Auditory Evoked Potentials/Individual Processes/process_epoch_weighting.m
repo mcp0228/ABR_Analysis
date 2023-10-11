@@ -75,6 +75,7 @@ function OutputFiles = Run(sProcess, sInputs) %#ok<DEFNU>
         EpochW = ones(epochSize(1),1,1)./var((AllMat(:,:,i)),0,2); % Calculation of epoch specific weighting.
         WEpoch = EpochW.*(AllMat(:,:,i)); % Application of epoch specific weighting to all epochs.
         WEpoch = WEpoch.*10^(-12);
+        trial_num = regexp(sInputs(i).Comment, '\(#[0-9]*\)', 'match', 'once');
         
     % ===== SAVE THE RESULTS =====
     % Get the output study (Epoch weighting)
@@ -82,7 +83,7 @@ function OutputFiles = Run(sProcess, sInputs) %#ok<DEFNU>
     % Create a new data file structure
     DataMat             = db_template('datamat');
     DataMat.F           = WEpoch;
-    DataMat.Comment     = sprintf('WEpoch'); % Names the output file as 'WEpoch'.
+    DataMat.Comment     = ['WEpoch', ' ', trial_num]; % Names the output file as 'WEpoch' and adds the trial No. as a file tag.
     DataMat.ChannelFlag = ones(epochSize(1), 1);   % List of good/bad channels (1=good, -1=bad)
     DataMat.Time        = Time;
     DataMat.DataType    = 'recordings';
