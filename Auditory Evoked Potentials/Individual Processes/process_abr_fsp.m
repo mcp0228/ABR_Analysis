@@ -39,12 +39,10 @@ function sProcess = GetDescription() %#ok<DEFNU>
     sProcess.options.info.Value   = [];
 end
 
-
 %% ===== FORMAT COMMENT =====
 function Comment = FormatComment(sProcess) %#ok<DEFNU>
      Comment = sProcess.Comment;
 end
-
 
 %% ===== RUN =====
 function OutputFiles = Run(sProcess, sInputs) %#ok<DEFNU>
@@ -73,9 +71,6 @@ function OutputFiles = Run(sProcess, sInputs) %#ok<DEFNU>
         AllMat(:,:,i) = DataMat.F;
     end
     
-
-
-    
     % ===== PROCESS =====
     % This is where the actual process of data manipulation and calculation takes place.
     AllMatFsp = AllMat;
@@ -91,7 +86,7 @@ function OutputFiles = Run(sProcess, sInputs) %#ok<DEFNU>
     AvgEpoch  = mean(AllMatFsp,3); % Unweighted epoch averaging over epochs.
     AvgEpoch  = AvgEpoch(:,[150 162 173 185 196 208 219 231 242 253 265 276 288 299 311]); 
     % Selects 15 time points (degrees of freedom). [Nchannels X Ntime points]
-    Time      = 2; % Fsp_C and Fsp_W both produce a single value therefore need time = 1 to open the file. 
+    Time      = 1; % Fsp_C and Fsp_W both produce a single value therefore need time = 1 to open the file. 
 
     SpWEpoch  = zeros(Nchannels, Nepochs); % Creates Nchannels X Nepochs matrix of zeros.
     SpEpoch   = zeros(Nchannels, Nepochs); % Creates Nchannels X Nepochs matrix of zeros.
