@@ -19,7 +19,7 @@ function sProcess = GetDescription() %#ok<DEFNU>
     sProcess.Category    = 'Custom';
     sProcess.SubGroup    = 'Custom Processes';
     sProcess.Index       = 1000;
-    sProcess.Description = 'https://github.com/park-minchul/Brainstorm-Custom-Processes/tree/main/Sleep%20Spindle%20Parameters';
+    sProcess.Description = 'https://github.com/park-minchul/Brainstorm-Custom-Processes/blob/main/Sleep%20Spindle%20Parameters/README.md';
     % Definition of the input accepted by this process
     sProcess.InputTypes  = {'data'};
     sProcess.OutputTypes = {'data'};
