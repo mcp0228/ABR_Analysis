@@ -1,12 +1,12 @@
 # Sleep Spindle Parameters
-Brainstorm custom-made process to calculate sleep spindle duration, frequency, max peak-to-peak amplitude, and degree of symmetry.
+Brainstorm custom-made process to calculate sleep spindle parameters: duration, frequency, max. peak-to-peak amplitude, degree of symmetry, RMS amplitude and activity. 
 
 ## How the process works
 The following highlights several points the user needs to be aware of before using this process. 
 1) This process assumes that the EEG data was already filtered between 11 - 16 Hz (i.e. the σ band).
 2) This process is *not* an automatic spindle detection algorithm.
 3) This process only works with already identified and extracted discrete individual spindles (i.e. cannot work on raw EEG files).
-4) This process will generate 4 files each according to a spindle parameter - duration, frequency, amplitude and symmetry.
+4) This process will generate 6 files each according to a spindle parameter - duration, frequency, max. peak-to-peak amplitude, symmetry, RMS amplitude, and activity. 
 5) Each file x-axis = spindle number but the units will = Time (s). Unfortunately, this cannot be changed.
 6) Calculation of spindle density is *not* part of this process. 
 
@@ -38,6 +38,14 @@ The Matlab [*findpeaks*](https://au.mathworks.com/help/signal/ref/findpeaks.html
 <br>With the location (in seconds) of all peaks and the maximum peak for each spindle already known by the *findpeaks* function, the symmetry was calculated as follows; symmetry = % of (time location of maximum peak/duration). 
 Meaning, that a spindle symmetry value of 70% indicates that the maximum peak for that spindle is at 70% of its duration. The corresponding Brainstorm file output looks like below.
 ![EEG_All_CTRL8_L_Sleep_band_SS_Sym_94](https://github.com/park-minchul/Brainstorm-Custom-Processes/assets/134780775/0e0a8363-d811-4dde-943f-855052bf105c)
+
+**5) RMS amplitude.**
+<br>Calculates the RMS amplitude of every spindle and displays this over the given number of spindles. The corresponding Brainstorm file output looks like below.
+![EEG_All_CTRL_CTRL8_sleep_epochs_band_SS_Rms_126](https://github.com/park-minchul/Brainstorm-Custom-Processes/assets/134780775/5da23536-5a23-4ecd-9b65-4026fa8be3de)
+
+**6) Activity.**
+<br>Activity is calculated by max. peak-to-peak amplitude (calculated in 3)*duration (calculated in 1). The corresponding Brainstorm file output looks like below.
+![EEG_All_CTRL_CTRL8_sleep_epochs_band_SS_Act_126](https://github.com/park-minchul/Brainstorm-Custom-Processes/assets/134780775/7bccf788-1433-4104-8fa2-12a9d85fa8c0)
 
 ### Additional resources
 **Relevant Brainstorm forums written by the author**
