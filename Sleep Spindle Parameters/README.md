@@ -57,3 +57,6 @@ Meaning, that a spindle symmetry value of 70% indicates that the maximum peak fo
 <br>Sleep spindle parameter definitions used in this process were obtained from the second article. 
 1) [Sleep Spindles: Mechanisms and Functions](https://pubmed.ncbi.nlm.nih.gov/31804897/)
 2) [Sleep-spindle detection: crowdsourcing and evaluating performance of experts, non-experts and automated methods](https://pubmed.ncbi.nlm.nih.gov/24562424/)
+
+**Cite As**
+MinChul Park (2023). Sleep spindle parameters, [GitHub](https://github.com/park-minchul/Brainstorm-Custom-Processes/tree/main/Sleep%20Spindle%20Parameters), University of Canterbury, Christchurch, New Zealand.
