@@ -33,3 +33,9 @@ Thanks to support from Brainstorm software engineers, [François Tadel](https://
 1. [Matlab](https://au.mathworks.com/products/matlab.html).
 2. [Brainstorm software](https://neuroimage.usc.edu/brainstorm/).
 3. [How to write your own process](https://neuroimage.usc.edu/brainstorm/Tutorials/TutUserProcess).
+
+### Cite As ###
+Auditory Evoked Potentials
+<br>MinChul Park (2023). Auditory evoked potentials, [GitHub](https://github.com/park-minchul/Brainstorm-Custom-Processes/tree/main/Auditory%20Evoked%20Potentials), University of Canterbury, Christchurch, New Zealand.
+<br>Sleep Spindles
+<br>MinChul Park (2023). Sleep spindle parameters, [GitHub](https://github.com/park-minchul/Brainstorm-Custom-Processes/tree/main/Sleep%20Spindle%20Parameters), University of Canterbury, Christchurch, New Zealand.
