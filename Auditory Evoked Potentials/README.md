@@ -80,3 +80,6 @@ In this case, the merged channel is almost exactly in between the two channels i
 1. [Evaluating residual background noise in human auditory brain‐stem responses](https://pubs.aip.org/asa/jasa/article/96/5/2746/963118/Evaluating-residual-background-noise-in-human)
 2. [Quality Estimation of Averaged Auditory Brainstem Responses](https://www.tandfonline.com/doi/abs/10.3109/01050398409043059)
 3. [Acoustic change complex for assessing speech discrimination in normal-hearing and hearing-impaired infants](https://www.sciencedirect.com/science/article/pii/S1388245723002195?via%3Dihub)
+
+### Cite As ###
+MinChul Park (2023). Auditory evoked potentials, [GitHub](https://github.com/park-minchul/Brainstorm-Custom-Processes/tree/main/Auditory%20Evoked%20Potentials), University of Canterbury, Christchurch, New Zealand.
