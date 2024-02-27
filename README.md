@@ -27,7 +27,7 @@ Contact MinChul Park, MAud(Hons), University of Canterbury, the author of these 
 
 ### Acknowledgments
 Thanks to support from Brainstorm software engineers, [François Tadel](https://neuroimage.usc.edu/brainstorm/AboutUs/FrancoisTadel?highlight=%28francois%29%7C%28tadel%29#Fran.2BAOc-ois_Tadel.2C_MSc) and [Raymundo Cassani](https://neuroimage.usc.edu/brainstorm/AboutUs/RaymundoCassani?highlight=%28raymundo%29#Raymundo_Cassani.2C_PhD).
-<br>Thanks to the author's PhD supervisors [Mike Maslin](https://www.canterbury.ac.nz/science/contact-us/people/michael-maslin.html) and [Greg O'Beirne](https://www.canterbury.ac.nz/science/contact-us/people/greg-obeirne.html).
+<br>Thanks to the author's PhD supervisors [Mike Maslin](https://profiles.canterbury.ac.nz/Mike-Maslin) and [Greg O'Beirne](https://profiles.canterbury.ac.nz/Greg-O-Beirne).
 
 ### Resources
 1. [Matlab](https://au.mathworks.com/products/matlab.html).
