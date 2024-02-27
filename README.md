@@ -7,7 +7,7 @@ This repository is a collection of all the custom processes that were written as
 Although Brainstorm does not require users to own a Matlab license all the processes were written with Matlab. 
 The repository comes in two parts; **Auditory Evoked Potentials** and **Sleep Spindle Parameters**.
 
-**Auditory Evoked Potentials** 
+**[Auditory Evoked Potentials](https://github.com/park-minchul/Brainstorm-Custom-Processes/blob/main/Auditory%20Evoked%20Potentials/README.md)** 
 <br>This folder contains custom processes for analysing auditory evoked potentials (AEP). 
 <br>The processes were mainly used to analyse auditory brainstem responses (ABR; an early component of the AEP) but they can be used for later potentials as well (e.g. cortical auditory evoked potentials; CAEP). 
 <br><br>There are two subfolders inside; *combined processes* and *individual processes*. 
@@ -16,13 +16,12 @@ The repository comes in two parts; **Auditory Evoked Potentials** and **Sleep Sp
 That is, the processes from the *combined processes* folder output more than one measurement type from a group of epochs (e.g. residual noise, weighted average, and noise per epoch).
 Users can combine processes from the *individual processes* folder to generate their own combined processes. 
 
-**Sleep Spindle Parameters**
+**[Sleep Spindle Parameters](https://github.com/park-minchul/Brainstorm-Custom-Processes/blob/main/Sleep%20Spindle%20Parameters/README.md)**
 <br>This folder contains a process that calculates the parameters of sleep spindles and explanations of what the process does and how it works.
 <br>To learn more about this process visit the README.md of this folder. 
 
 ### Contact
-Contact MinChul Park, MAud(Hons), University of Canterbury, the author of these processes for questions. 
-<br>[minchul.park@pg.canterbury.ac.nz](minchul.park@pg.canterbury.ac.nz).
+Contact MinChul Park, University of Canterbury, Christchurch, New Zealand, the author of these processes for questions. 
 <br>[ORCID](https://orcid.org/0000-0001-5500-1623) & [LinkedIn](https://www.linkedin.com/in/minchul-park-a538ab102).
 
 ### Acknowledgments
