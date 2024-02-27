@@ -23,7 +23,7 @@ Users can combine processes from the *individual processes* folder to generate t
 ### Contact
 Contact MinChul Park, MAud(Hons), University of Canterbury, the author of these processes for questions. 
 <br>[minchul.park@pg.canterbury.ac.nz](minchul.park@pg.canterbury.ac.nz).
-<br>[ORCID](https://orcid.org/0000-0001-5500-1623) & [LinkedIn](linkedin.com/in/minchul-park-a538ab102).
+<br>[ORCID](https://orcid.org/0000-0001-5500-1623) & [LinkedIn](https://www.linkedin.com/in/minchul-park-a538ab102).
 
 ### Acknowledgments
 Thanks to support from Brainstorm software engineers, [François Tadel](https://neuroimage.usc.edu/brainstorm/AboutUs/FrancoisTadel?highlight=%28francois%29%7C%28tadel%29#Fran.2BAOc-ois_Tadel.2C_MSc) and [Raymundo Cassani](https://neuroimage.usc.edu/brainstorm/AboutUs/RaymundoCassani?highlight=%28raymundo%29#Raymundo_Cassani.2C_PhD).
